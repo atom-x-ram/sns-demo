@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "117306986903",
+    "project_id": "sns-demo-b6a75",
+    "storage_bucket": "sns-demo-b6a75.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:117306986903:android:5afdd7e56859f350fe34d2",
+        "android_client_info": {
+          "package_name": "com.example.sns_demo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiXJXwsZmx2V-Cv41VqC0mfSQ1voooUX0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
