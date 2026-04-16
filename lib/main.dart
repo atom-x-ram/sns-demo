@@ -5,8 +5,21 @@ import 'services/notification_service.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
-  await NotificationService.instance.initialize();
+
+  bool firebaseReady = false;
+  try {
+    await Firebase.initializeApp();
+    firebaseReady = true;
+  } catch (e) {
+    debugPrint('Firebase initialization failed: $e');
+    debugPrint(
+      'Ensure iOS has Runner/GoogleService-Info.plist and Android has app/google-services.json.',
+    );
+  }
+
+  if (firebaseReady) {
+    await NotificationService.instance.initialize();
+  }
 
   runApp(const MyApp());
 }
